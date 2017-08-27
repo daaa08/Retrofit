@@ -47,3 +47,10 @@ public void loadItem() {
         url.setText(user.getUrl());
     }
 ```
+- interface
+```java
+public interface GitHubService {
+    @GET("users/{username}")
+    Call<User> getUser(@Path("username") String username);
+}
+```
